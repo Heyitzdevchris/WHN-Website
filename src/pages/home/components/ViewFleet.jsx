@@ -9,7 +9,7 @@ import './ViewFleet.css';
 const ViewFleet = () => {
   return (
     <div className="container">
-        <h1>View Our Fleet!</h1>
+        <h1>View The Fleet</h1>
         <div className="card__container">
             <article className="card__article">
                 <img src={ScionImg} alt="White Scion TC" className="card__img" />
