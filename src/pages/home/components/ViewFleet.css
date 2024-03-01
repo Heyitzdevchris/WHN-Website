@@ -68,7 +68,7 @@
 
 .view-fleet-button {
     display: block;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 10px 20px;
     background-color: var(--secondaryColor);
     color: var(--textColor);
