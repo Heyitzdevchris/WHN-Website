@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from './Logo';
 import './Navbar.css';
