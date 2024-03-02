@@ -74,8 +74,9 @@
     color: var(--textColor);
     border: none;
     border-radius: 22px;
-    font-size: 16px; 
+    font-size: 14px; 
     cursor: pointer;
+    text-decoration: none;
 }
 
 .view-fleet-button:hover {
@@ -171,9 +172,6 @@ img {
 
 /* For larger devices */
 @media screen and (min-width: 1120px) {
-    .container {
-        height: 100vh;
-    }
 
     .card__container {
         grid-template-columns: repeat(3, 1fr);

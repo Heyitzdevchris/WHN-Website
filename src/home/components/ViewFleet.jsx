@@ -1,8 +1,9 @@
 import React from 'react';
-import ScionImg from '../../../images/scion.jpeg';
-import HeliosImg from '../../../images/helios.jpeg';
-import StormTrooperImg from '../../../images/stormtrooper.jpg';
-import WhiteNoiseImg from '../../../images/whitenoise.jpeg';
+import { Link } from 'react-router-dom';
+import ScionImg from '../../images/scion.jpeg';
+import HeliosImg from '../../images/helios.jpeg';
+import StormTrooperImg from '../../images/stormtrooper.jpg';
+import WhiteNoiseImg from '../../images/whitenoise.jpeg';
 import './ViewFleet.css';
 
 
@@ -48,7 +49,9 @@ const ViewFleet = () => {
                 </div>
             </article>
         </div>
-        <button className='view-fleet-button'>View Fleet</button>
+        <Link to="/fleet" className='view-fleet-button'>
+            View Fleet
+        </Link>
     </div>
   );
 };
