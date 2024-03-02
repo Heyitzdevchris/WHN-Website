@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 60px;
     padding: 0 2rem;
     background-color: var(--mainColor);
     color: var(--textColor);
@@ -15,6 +15,7 @@ header {
 
 nav a {
     margin: 0 2rem;
+    padding-bottom: .5rem;
     color: var(--textColor);
     text-decoration: none;
 }
