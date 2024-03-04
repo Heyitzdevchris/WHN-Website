@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import './Fleet.css';
 
-const Fleet = () => {
+export default function Fleet() {
   return (
-    <h1>This Fleet Page Is Under Construction...</h1>
+    <div className="fleet-content">
+      <h1>The Fleet Page Is Currently Under Construction...</h1>
+    </div>
   );
 };
-
-export default Fleet;

@@ -1,10 +1,10 @@
-.about-wrap {
+.abt-wrap {
     display: flex;
     flex-direction: row;
     height: 39rem;
   }
 
-.about-content {
+.abt-content {
     background-color: var(--mainColorLight);
     color: var(--textColor);
     width: 40%;
@@ -16,17 +16,17 @@
     overflow: auto;
   }
 
-.about-photo {
+.abt-photo {
     width: 60%;
     justify-content: center;
     padding: 0;
 }
 
-.about-text {
+.abt-text {
     max-width: 500px;
 }
 
-.about-btn {
+.abt-btn {
     padding: 0.5rem;
     margin: 20px auto;
     padding: 10px 20px;
@@ -54,22 +54,22 @@ h1 {
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .about-wrap {
+    .abt-wrap {
         height: 42rem;
     }
 
-    .about-text {
+    .abt-text {
         max-width: 350px;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .about-wrap {
+    .abt-wrap {
         height: 30rem;
     }
 
-    .about-text {
+    .abt-text {
         max-width: 280px;
     }
 
@@ -84,19 +84,19 @@ h1 {
 
 /* Large phone view */
 @media (max-width: 650px) {
-    .about-wrap {
+    .abt-wrap {
       flex-direction: column;
       align-items: center;
       width: 100%;
       height: fit-content;
     }
   
-    .about-content {
+    .abt-content {
       width: 100%;
       padding: 1rem 0;
     }
   
-    .about-wrap img {
+    .abt-wrap img {
       width: 100%;
     }
   }

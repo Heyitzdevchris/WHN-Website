@@ -2,13 +2,15 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from '../home/Home';
 import Fleet from '../pages/fleet-page/Fleet';
+import About from '../pages/about-page/About';
 
 const RoutesComponent = () => {
   return (
     <div>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path='/fleet' element={<Fleet />} />
+            <Route path="/fleet" element={<Fleet />} />
+            <Route path="/about" element={<About />} />
         </Routes>
     </div>
   );
