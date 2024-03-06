@@ -42,7 +42,7 @@ header .nav-btn {
 
 
 /* For Tablet & L-Mobile Screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
     header .nav-btn {
         visibility: visible;
         opacity: 1;
@@ -66,6 +66,7 @@ header .nav-btn {
 
     header .responsive_nav {
         transform: none;
+        /* background-color: rgba(128, 128, 128, .7); */
     }
 
     nav .nav-close-btn {

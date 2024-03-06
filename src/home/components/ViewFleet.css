@@ -70,7 +70,7 @@
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: var(--secondaryColor);
+    background-color: var(--mainColor);
     color: var(--textColor);
     border: none;
     border-radius: 22px;
