@@ -4,8 +4,14 @@ import './Footer.css';
 
 export const Footer = () => {
   return (
-    <div className='footer-container'>
-      Footer
-    </div>
+    <footer className="footer">
+      <div className="footer-left">
+        <h1>The WHN Experience</h1>
+        <p>Excellence By Design</p>
+      </div>
+      <div className="footer-right">
+        <p>&copy; The WHN Experience 2024</p>
+      </div>
+    </footer>
   );
 };
