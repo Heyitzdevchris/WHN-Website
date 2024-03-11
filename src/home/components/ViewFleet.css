@@ -19,7 +19,7 @@
     width: 328px;
     height: 360px;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: .5rem;
 }
 
 .card__data {
@@ -27,7 +27,7 @@
     background-color: var(--textColor);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-    border-radius: 1rem;
+    border-radius: .5rem;
     position: absolute;
     bottom: -9rem;
     left: 0;
