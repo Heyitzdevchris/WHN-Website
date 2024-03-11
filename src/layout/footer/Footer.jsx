@@ -1,8 +1,11 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import './Footer.css';
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='footer-container'>
+      Footer
+    </div>
   );
 };

@@ -1,3 +1,4 @@
-.footer {
+.footer-container {
+    margin-top: auto;
     background-color: var(--mainColor);
 }
