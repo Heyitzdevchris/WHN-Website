@@ -42,12 +42,12 @@
     }
 }
 
-p {
+.abt-text p {
     margin: 1rem;
     text-align: left;
 }
 
-h1 {
+.abt-content h1 {
     font-size: 2.5rem;
 }
 
@@ -75,11 +75,11 @@ h1 {
         line-height: 1.2rem;
     }
 
-    h1 {
+    .abt-content h1{
         font-size: 1.7rem;
     }
 
-    p {
+    .abt-text p {
         font-size: 12px;
     }
 }
