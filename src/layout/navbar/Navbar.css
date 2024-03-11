@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -71,6 +71,10 @@
 }
 
 @media screen and (max-width: 960px) {
+    .navbar {
+        font-size: 1.3rem;
+    }
+
     .NavbarItems {
       position: relative;
     }
