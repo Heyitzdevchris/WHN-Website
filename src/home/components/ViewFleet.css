@@ -1,4 +1,4 @@
-.container {
+.fleet-container {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
@@ -37,7 +37,7 @@
     transition: opacity 1s 1s;
 }
 
-.container h1 {
+.fleet-container h1 {
     font-size: 26px;
     font-weight: normal;
     margin: 20px 0;
@@ -103,7 +103,7 @@
     animation: remove-data 1s forwards;
 }
 
-img {
+.card__img img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -152,7 +152,7 @@ img {
 
 /* For small mobile devices */
 @media screen and (min-width: 340px) {
-    .container {
+    .fleet-container {
         margin-inline: 1rem;
     }
 
