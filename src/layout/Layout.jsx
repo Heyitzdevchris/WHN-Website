@@ -6,10 +6,10 @@ import { Footer } from './footer/Footer';
 
 export default function Layout() {
   return (
-    <>
-    <Navbar />
-    <RoutesComponent />
-    <Footer />
-    </>
+    <div className='layout-container'>
+      <Navbar />
+      <RoutesComponent />
+      <Footer />
+    </div>
   )
 }
