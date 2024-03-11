@@ -1,33 +1,54 @@
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
 import './Navbar.css';
 
 export const Navbar = () => {
-    const navRef = useRef();
+    const [click, setClick] = useState(false);
 
-    const showNavbar = () => {
-        navRef.current.classList.toggle('responsive_nav');
-    }
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
   return (
-    <header>
-        <Link to="/">
-            <Logo />
-        </Link>
-        <nav ref={navRef}>
-            <Link to="/">Home</Link>
-            <Link to="/fleet">Fleet</Link>
-            <Link to="/about">About</Link>
-            <a href='/#'>Profile/Login</a>
-            <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-                <FaTimes />
-            </button>
-        </nav>
-        <button className='nav-btn' onClick={showNavbar}>
-            <FaBars />
-        </button>
-    </header>
+    <>
+    <nav className="navbar">
+        <div className="navbar-container container">
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                <Logo className='navbar-icon'/>
+            </Link>
+            <div className='menu-icon' onClick={handleClick}>
+                {click ? <FaTimes /> : <FaBars />}
+            </div>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+                <li className="nav-item">
+                    <NavLink to='/' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        Home
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/fleet' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        Fleet
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/about' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        About Us
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/contact' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        Contact
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink to='/account' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        Account
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </>
   );
 };
