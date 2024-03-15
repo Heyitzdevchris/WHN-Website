@@ -6,7 +6,7 @@
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,.1);
 }
 
-.content {
+.advertisement-content {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -17,24 +17,24 @@
     color: var(--textColor);
 }
 
-.content h1 {
+.advertisement-content h1 {
     font-size: 56px;
     font-weight: bolder;
 }
 
-.content p {
+.advertisement-content p {
     font-size: 22px;
     margin: 15px 0;
     max-width: 550px;
 }
 
 /* Media query for tablet */
-@media only screen and (max-width: 991px) {
-    .content h1 {
+@media screen and (max-width: 991px) {
+    .advertisement-content h1 {
         font-size: 40px;
     }
 
-    .content p {
+    .advertisement-content p {
         font-size: 18px;
         margin: 10px 0;
         max-width: 450px; 
@@ -42,12 +42,12 @@
 }
 
 /* Media query for x-large mobile phone */
-@media only screen and (max-width: 767px) {
-    .content h1 {
+@media screen and (max-width: 767px) {
+    .advertisement-content h1 {
         font-size: 32px;
     }
 
-    .content p {
+    .advertisement-content p {
         font-size: 16px;
         margin: 8px 0; 
         max-width: 350px; 
