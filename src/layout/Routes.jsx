@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../home/Home';
 import Fleet from '../pages/fleet-page/Fleet';
 import About from '../pages/about-page/About';
+import Contact from '../pages/contact-page/Contact';
+import Account from '../pages/account-page/Account';
 
 const RoutesComponent = () => {
   return (
@@ -11,6 +13,8 @@ const RoutesComponent = () => {
             <Route path="/" element={<Home />} />
             <Route path="/fleet" element={<Fleet />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/account" element={<Account />} />
         </Routes>
     </div>
   );
