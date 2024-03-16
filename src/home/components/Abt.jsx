@@ -8,7 +8,7 @@ const Abt = () => {
     <div className="abt-wrap">
       <img src={AboutUsImage} alt="White Conference Room" className="abt-photo" />
       <div className="abt-content">
-        <h1>About Us</h1>
+        <h1 className='abt-heading'>About Us</h1>
         <div className='abt-text'>
         <p>At WHN, we've torn down the veil of nebulous transaction processes to build something revolutionary. 
           Our foundation is built on the solid ground of transparency, equity, and mutual respect. 
