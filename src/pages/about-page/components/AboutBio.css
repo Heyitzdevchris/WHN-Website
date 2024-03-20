@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     .about-bio-content {
         padding: 0;
         height: 29rem;
