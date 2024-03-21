@@ -32,8 +32,8 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to='/schedule' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
-                        Schedule
+                    <NavLink to='/reservation' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                        Reservation
                     </NavLink>
                 </li>
                 <li className="nav-item">
