@@ -1,6 +1,7 @@
 import React from 'react';
 import './Advertisement.css';
 import BackgroundImage from '../../images/background.jpg'
+import HqHomepageForm from './HqHomepageForm';
 
 const Advertisement = () => {
     return (
@@ -8,6 +9,7 @@ const Advertisement = () => {
             <div className="advertisement-content">
                 <h1>The WHN Experience</h1>
                 <p>Excellence By Design</p>
+                <HqHomepageForm />
             </div>
         </section>
     );
