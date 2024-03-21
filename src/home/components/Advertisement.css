@@ -12,6 +12,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding-top: 20rem;
     justify-content: center;
     align-items: center;
     color: var(--textColor);
@@ -28,6 +29,17 @@
     max-width: 550px;
 }
 
+/* Media query for Laptop */
+@media screen and (max-width: 1024px) {
+    .advertisement-content p {
+        padding-bottom: 3rem;
+    }
+
+    .advertisement-content iframe {
+        width: 900px;
+    }
+}
+
 /* Media query for tablet */
 @media screen and (max-width: 991px) {
     .advertisement-content h1 {
@@ -38,6 +50,10 @@
         font-size: 18px;
         margin: 10px 0;
         max-width: 450px; 
+    }
+
+    .advertisement-content iframe {
+        width: 700px;
     }
 }
 
@@ -51,5 +67,9 @@
         font-size: 16px;
         margin: 8px 0; 
         max-width: 350px; 
+    }
+
+    .advertisement-content iframe {
+        width: 340px;
     }
 }
