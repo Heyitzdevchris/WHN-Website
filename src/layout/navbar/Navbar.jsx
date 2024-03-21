@@ -32,7 +32,7 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to='/reserve' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                    <NavLink to='/reservation' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Reservation
                     </NavLink>
                 </li>
