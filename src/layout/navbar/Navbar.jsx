@@ -46,11 +46,11 @@ export const Navbar = () => {
                         Contact
                     </NavLink>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <NavLink to='/account' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Account
                     </NavLink>
-                </li>
+                </li> */}
             </ul>
         </div>
     </nav>
