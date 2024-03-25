@@ -12,7 +12,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 20rem;
+    padding-top: 8rem;
     justify-content: center;
     align-items: center;
     color: var(--textColor);
@@ -42,6 +42,10 @@
 
 /* Media query for tablet */
 @media screen and (max-width: 991px) {
+    .advertisement-content {
+        padding-top: 0;
+    }
+
     .advertisement-content h1 {
         font-size: 40px;
     }
@@ -53,12 +57,20 @@
     }
 
     .advertisement-content iframe {
-        width: 700px;
+        width: 768px;
     }
 }
 
 /* Media query for x-large mobile phone */
 @media screen and (max-width: 767px) {
+    .hero {
+        height: 1400px;
+    }
+
+    .advertisement-content {
+        padding-top: 100px;
+    }
+
     .advertisement-content h1 {
         font-size: 32px;
     }
@@ -70,6 +82,8 @@
     }
 
     .advertisement-content iframe {
-        width: 340px;
+        width: 430px;
+        height: 1200px;
+        z-index: 100;
     }
 }
