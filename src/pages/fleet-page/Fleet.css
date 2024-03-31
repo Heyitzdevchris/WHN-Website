@@ -1,3 +1,67 @@
+.fleet-hero {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,.2);
+}
+
+.fleet-ad-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.fleet-ad-heading {
+    font-size: 56px;
+    font-weight: bolder;
+}
+
+.fleet-ad-text {
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+/* Media query for Laptop */
+@media screen and (max-width: 1024px) {
+    .fleet-ad-heading {
+        font-size: 48px;
+    }
+}
+
+/* Media query for Tablet*/
+@media screen and (max-width: 991px) {
+    .fleet-ad-heading {
+        font-size: 36px;
+    }
+
+    .fleet-ad-text {
+        font-size: 24px;
+    }
+}
+
+/* Media query for X-Large Phone*/
+@media screen and (max-width: 767px) {
+    .fleet-hero {
+        height: 1100px;
+    }
+
+    .fleet-ad-heading {
+        font-size: 22px;
+    }
+
+    .fleet-ad-text {
+        font-size: 16px;
+    }
+}
+
+
+
 .fleet-container {
     display: grid;
     place-items: center;
