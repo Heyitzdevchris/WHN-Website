@@ -1,6 +1,6 @@
 import React from 'react';
 import './Advertisement.css';
-import BackgroundImage from '../../images/background.jpg'
+import BackgroundImage from '../../images/background.jpg';
 import HqHomepageForm from './HqHomepageForm';
 
 const Advertisement = () => {
