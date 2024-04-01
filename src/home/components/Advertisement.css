@@ -61,6 +61,13 @@
     }
 }
 
+/* Media query for landscape tablet */
+@media screen and (min-width: 1025px) and (max-width: 1366) {
+    .advertisement-content {
+        padding-top: 300px;
+    }
+}
+
 /* Media query for x-large mobile phone */
 @media screen and (max-width: 767px) {
     .hero {
