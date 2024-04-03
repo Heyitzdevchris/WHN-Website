@@ -8,7 +8,7 @@ export default function ViewFleet() {
     <div className="view-fleet-container">
         <div className='view-fleet-heading'>
             <h1>Find Your Drive</h1>
-            <span>Car rentals from WHN Enterprise</span>
+            <p>Car rentals from WHN Enterprise</p>
         </div>
         <div className="view-fleet-btn-section">
             <Link to='/fleet'>
