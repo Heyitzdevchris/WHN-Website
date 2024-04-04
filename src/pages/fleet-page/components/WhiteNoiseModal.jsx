@@ -32,7 +32,7 @@ export default function WhiteNoiseModal({open,onClose}) {
                         <li>- AUX Input</li>
                     </ul>
                     <h3 className='modalSubheading'>Description:</h3>
-                    <p>
+                    <p className='modalText'>
                         A symbol of elegance and innovation. This 2023 Pearl White Tesla Model Y AWD Long Range merges style with efficiency, 
                         offering the full spectrum of Tesla's cutting-edge technology, including optional Full Self-Driving capabilities. From 
                         its premium black leather interior to its ceramic insulated tinted windows, every detail ensures your journey is not just 
