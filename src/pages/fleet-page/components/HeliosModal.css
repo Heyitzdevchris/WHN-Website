@@ -9,37 +9,37 @@
     z-index: 999;
 }
 
-.modal-container {
+.modalContainer {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     display: flex;
-    width: 900px;
+    width: 1000px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,.75);
     z-index: 1000;
 }
 
-.modal-img {
-    width: 350px;
+.modalImg {
+    width: 525px;
     object-fit: cover;
 }
 
-.modal-right {
+.modalRight {
     width: 100%;
 }
 
-.modal-close-btn {
+.modalCloseBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.modal-content {
+.modalContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,12 +48,24 @@
     padding: 1rem 2rem;
 }
 
-.btn-container {
+.modalHeading {
+    color: var(--secondaryColor);
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.modalSubheading {
+    padding: 10px 0;
+    color: var(--mainColor);
+    font-size: 22px;
+}
+
+.btnContainer {
     display: flex;
     padding: 1rem 1rem;
 }
 
-.btn-container button {
+.btnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -65,44 +77,52 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .modal-container {
-        height: 50vh;
+    .modalContainer {
+        height: 70vh;
         width: 80%;
     }
 
-    .modal-img {
-        width: 40%;
+    .modalImg {
+        width: 45%;
     }
 
-    .modal-content {
+    .modalContent {
         margin-top: 0;
+    }
+
+    .modalList {
+        font-size: 12px;
+    }
+
+    .modalText {
+        font-size: 12px;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .modal-container {
-        height: 65vh;
-        width: 90%;
+    .modalContainer {
+        height: 78vh;
+        width: 95%;
     }
 
-    .modal-img {
-        width: 50%;
+    .modalImg {
+        width: 55%;
     }
 
-    .modal-content {
+    .modalContent {
         margin-top: 10px;
     }
 
-    .modal-content p {
+    .modalContentSubheading {
         font-size: 16px;
     }
 
-    .btn-container {
+    .btnContainer {
         padding: 1rem 0;
     }
 
-    .btn-container button {
+    .btnContainer button {
         padding: 16px 8px;
     }
 
@@ -110,7 +130,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .modal-container {
+    .modalContainer {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -119,7 +139,19 @@
         height: 100vh;
     }
 
-    .modal-img {
+    .modalHeading {
+        text-align: center;
+    }
+
+    .modalList {
+        font-size: 10px;
+    }
+
+    .modalText {
+        font-size: 10px;
+    }
+
+    .modalImg {
         width: 100%;
         padding-top: 20px;
     }
