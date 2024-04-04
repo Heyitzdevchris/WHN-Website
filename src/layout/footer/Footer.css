@@ -1,10 +1,10 @@
 .footer {
-    margin-top: auto;
+    margin-top: 40px;
     background-color: var(--mainColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 1rem;
     color: var(--textColor);
 }
 
