@@ -48,7 +48,7 @@ export default function Fleet() {
                     </div>
                 </article>
                 <article className="cardArticle">
-                    <img src={WhiteNoiseImg} alt="White Telsa Sedan" className="cardImg" />
+                    <img src={WhiteNoiseImg} alt="White Telsa SUV" className="cardImg" />
                     <div className="cardData">
                         <span className="cardDescription">Meet "White Noise"</span>
                         <h2 className="cardTitle">2023 Tesla Model Y</h2>
@@ -56,7 +56,7 @@ export default function Fleet() {
                     </div>
                 </article>
                 <article className="cardArticle">
-                    <img src={StormTrooperImg} alt="White Tesla SUV" className="cardImg" />
+                    <img src={StormTrooperImg} alt="White Tesla Sedan" className="cardImg" />
                     <div className="cardData">
                         <span className="cardDescription">Meet "Stormtrooper"</span>
                         <h2 className="cardTitle">2020 Tesla Model 3</h2>
