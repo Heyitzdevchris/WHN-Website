@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.modalContainer {
+.heliosModalContainer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,55 +17,64 @@
     background-color: white;
     display: flex;
     width: 1000px;
+    height: 95vh;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,.75);
     z-index: 1000;
 }
 
-.modalImg {
+.heliosModalImg {
     width: 525px;
     object-fit: cover;
 }
 
-.modalRight {
+.heliosModalRight {
     width: 100%;
 }
 
-.modalCloseBtn {
+.heliosModalCloseBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.modalContent {
+.heliosModalContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    margin-top: 3rem;
     padding: 1rem 2rem;
 }
 
-.modalHeading {
+.heliosModalHeading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.modalSubheading {
+.heliosModalSubheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.btnContainer {
+.heliosModalList {
+    font-size: 14px;
+}
+
+.heliosModalText {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.heliosBtnContainer {
     display: flex;
     padding: 1rem 1rem;
 }
 
-.btnContainer button {
+.heliosBtnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -77,52 +86,60 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .modalContainer {
-        height: 70vh;
+    .heliosModalContainer {
+        height: 80vh;
         width: 80%;
     }
 
-    .modalImg {
+    .heliosModalImg {
         width: 45%;
     }
 
-    .modalContent {
+    .heliosModalContent {
         margin-top: 0;
     }
 
-    .modalList {
+    .heliosModalList {
         font-size: 12px;
     }
 
-    .modalText {
+    .heliosModalText {
         font-size: 12px;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .modalContainer {
-        height: 78vh;
+    .heliosModalContainer {
+        height: 85vh;
         width: 95%;
     }
 
-    .modalImg {
+    .heliosModalImg {
         width: 55%;
     }
 
-    .modalContent {
+    .heliosModalContent {
         margin-top: 10px;
     }
 
-    .modalContentSubheading {
+    .heliosModalSubheading {
         font-size: 16px;
     }
 
-    .btnContainer {
+    .heliosModalList {
+        font-size: 11px;
+    }
+
+    .heliosModalText {
+        font-size: 11px;
+    }
+
+    .heliosBtnContainer {
         padding: 1rem 0;
     }
 
-    .btnContainer button {
+    .heliosBtnContainer button {
         padding: 16px 8px;
     }
 
@@ -130,7 +147,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .modalContainer {
+    .heliosModalContainer {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -139,19 +156,23 @@
         height: 100vh;
     }
 
-    .modalHeading {
+    .heliosModalHeading {
         text-align: center;
     }
 
-    .modalList {
+    .heliosModalList {
         font-size: 10px;
     }
 
-    .modalText {
+    .heliosModalText {
         font-size: 10px;
     }
 
-    .modalImg {
+    .heliosBtnContainer {
+        padding: 2rem 0;
+    }
+
+    .heliosModalImg {
         width: 100%;
         padding-top: 20px;
     }

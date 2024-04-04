@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.modalContainer {
+.scionModalContainer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -17,29 +17,30 @@
     background-color: white;
     display: flex;
     width: 1000px;
+    height: 95vh;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0,.75);
     z-index: 1000;
 }
 
-.modalImg {
+.scionModalImg {
     width: 525px;
     object-fit: cover;
 }
 
-.modalRight {
+.scionModalRight {
     width: 100%;
 }
 
-.modalCloseBtn {
+.scionModalCloseBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.modalContent {
+.scionModalContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,24 +49,33 @@
     padding: 1rem 2rem;
 }
 
-.modalHeading {
+.scionModalHeading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.modalSubheading {
+.scionModalSubheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.btnContainer {
-    display: flex;
-    padding: 1rem 1rem;
+.scionModalList {
+    font-size: 14px;
 }
 
-.btnContainer button {
+.scionModalText {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.scionBtnContainer {
+    display: flex;
+    padding: 8rem 1rem;
+}
+
+.scionBtnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -77,60 +87,74 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .modalContainer {
-        height: 65vh;
+    .scionModalContainer {
+        height: 80vh;
         width: 80%;
     }
 
-    .modalImg {
+    .scionModalImg {
         width: 45%;
     }
 
-    .modalContent {
+    .scionModalContent {
         margin-top: 0;
     }
 
-    .modalList {
+    .scionModalList {
         font-size: 12px;
     }
 
-    .modalText {
+    .scionModalText {
         font-size: 12px;
+    }
+
+    .scionBtnContainer {
+        padding-top: 7rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .modalContainer {
-        height: 75vh;
+    .scionModalContainer {
+        height: 85vh;
         width: 95%;
     }
 
-    .modalImg {
+    .scionModalImg {
         width: 55%;
     }
 
-    .modalContent {
+    .scionModalContent {
         margin-top: 10px;
     }
 
-    .modalContentSubheading {
+    .scionModalContentSubheading {
         font-size: 16px;
     }
 
-    .btnContainer {
+    .scionBtnContainer {
         padding: 1rem 0;
     }
 
-    .btnContainer button {
+    .scionBtnContainer {
+        padding-top: 5rem;
+    }
+
+    .scionBtnContainer button {
         padding: 16px 8px;
     }
 
 }
 
+@media screen and (min-width: 1025px) and (max-width: 1366) {
+    .scionModalContainer {
+        height: 80vh;
+    }
+}
+
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .modalContainer {
+    .scionModalContainer {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -139,19 +163,23 @@
         height: 100vh;
     }
 
-    .modalHeading {
+    .scionModalHeading {
         text-align: center;
     }
 
-    .modalList {
+    .scionModalList {
         font-size: 10px;
     }
 
-    .modalText {
+    .scionModalText {
         font-size: 10px;
     }
 
-    .modalImg {
+    .scionBtnContainer {
+        padding: 1rem 1rem;
+    }
+
+    .scionModalImg {
         width: 100%;
         padding-top: 20px;
     }

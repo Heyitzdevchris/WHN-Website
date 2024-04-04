@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.whiteNoiseModalContainer {
+.stormTrooperModalContainer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.whiteNoiseModalImg {
+.stormTrooperModalImg {
     width: 525px;
     object-fit: cover;
 }
 
-.whiteNoiseModalRight {
+.stormTrooperModalRight {
     width: 100%;
 }
 
-.whiteNoiseModalCloseBtn {
+.stormTrooperModalCloseBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.whiteNoiseModalContent {
+.stormTrooperModalContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,33 +48,33 @@
     padding: 1rem 2rem;
 }
 
-.whiteNoiseModalHeading {
+.stormTrooperModalHeading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.whiteNoiseModalSubheading {
+.stormTrooperModalSubheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.whiteNoiseModalList {
+.stormTrooperModalList {
     font-size: 14px;
 }
 
-.whiteNoiseModalText {
+.stormTrooperModalText {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.whiteNoiseBtnContainer {
+.stormTrooperBtnContainer {
     display: flex;
-    padding: 5rem 1rem;
+    padding: 6rem 1rem;
 }
 
-.whiteNoiseBtnContainer button {
+.stormTrooperBtnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -86,64 +86,64 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .whiteNoiseModalContainer {
+    .stormTrooperModalContainer {
         height: 80vh;
         width: 80%;
     }
 
-    .whiteNoiseModalImg {
+    .stormTrooperModalImg {
         width: 45%;
     }
 
-    .whiteNoiseModalContent {
+    .stormTrooperModalContent {
         margin-top: 0;
     }
 
-    .whiteNoiseModalList {
+    .stormTrooperModalList {
         font-size: 12px;
     }
 
-    .whiteNoiseModalText {
+    .stormTrooperModalText {
         font-size: 12px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 3rem 1rem;
+    .stormTrooperBtnContainer {
+        padding: 4rem 1rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .whiteNoiseModalContainer {
+    .stormTrooperModalContainer {
         height: 85vh;
         width: 95%;
     }
 
-    .whiteNoiseModalImg {
+    .stormTrooperModalImg {
         width: 55%;
     }
 
-    .whiteNoiseModalContent {
+    .stormTrooperModalContent {
         margin-top: 10px;
     }
 
-    .whiteNoiseModalSubheading {
+    .stormTrooperModalSubheading {
         font-size: 16px;
     }
 
-    .whiteNoiseModalList {
+    .stormTrooperModalList {
         font-size: 11px;
     }
 
-    .whiteNoiseModalText {
+    .stormTrooperModalText {
         font-size: 11px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 4rem 0;
+    .stormTrooperBtnContainer {
+        padding: 3rem 0;
     }
 
-    .whiteNoiseBtnContainer button {
+    .stormTrooperBtnContainer button {
         padding: 16px 8px;
     }
 
@@ -151,7 +151,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .whiteNoiseModalContainer {
+    .stormTrooperModalContainer {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -160,23 +160,23 @@
         height: 100vh;
     }
 
-    .whiteNoiseModalHeading {
+    .stormTrooperModalHeading {
         text-align: center;
     }
 
-    .whiteNoiseModalList {
+    .stormTrooperModalList {
         font-size: 10px;
     }
 
-    .whiteNoiseModalText {
+    .stormTrooperModalText {
         font-size: 10px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 1.5rem 0;
+    .stormTrooperBtnContainer {
+        padding: 4rem 0;
     }
 
-    .whiteNoiseModalImg {
+    .stormTrooperModalImg {
         width: 100%;
         padding-top: 20px;
     }

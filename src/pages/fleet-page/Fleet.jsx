@@ -10,6 +10,8 @@ import './Fleet.css';
 import ScionModal from './components/ScionModal';
 import HeliosModal from './components/HeliosModal';
 import WhiteNoiseModal from './components/WhiteNoiseModal';
+import StormTrooperModal from './components/StormTrooperModal';
+import TesiModal from './components/TesiModal';
 
 
 export default function Fleet() {
@@ -17,6 +19,8 @@ export default function Fleet() {
     const [openScion, setOpenScionModal] = useState(false);
     const [openHelios, setOpenHeliosModal] = useState(false);
     const [openWhiteNoise, setOpenWhiteNoiseModal] = useState(false);
+    const [openStormTrooper, setOpenStormTrooperModal] = useState(false);
+    const [openTesi, setOpenTesiModal] = useState(false); 
 
   return (
     <section>
@@ -30,6 +34,8 @@ export default function Fleet() {
             <ScionModal open={openScion} onClose={() => setOpenScionModal(false)} />
             <HeliosModal open={openHelios} onClose={() => setOpenHeliosModal(false)} />
             <WhiteNoiseModal open={openWhiteNoise} onClose={() => setOpenWhiteNoiseModal(false)} />
+            <StormTrooperModal open={openStormTrooper} onClose={() => setOpenStormTrooperModal(false)} />
+            <TesiModal open={openTesi} onClose={() => setOpenTesiModal(false)} />
             <div className="cardContainer">
                 <article className="cardArticle">
                     <img src={ScionImg} alt="White Scion TC" className="cardImg" />
@@ -60,7 +66,7 @@ export default function Fleet() {
                     <div className="cardData">
                         <span className="cardDescription">Meet "Stormtrooper"</span>
                         <h2 className="cardTitle">2020 Tesla Model 3</h2>
-                        <a href="/fleet" className="cardButton">Read More</a>
+                        <button className="cardButton" onClick={() => setOpenStormTrooperModal(true)}>Read More</button>
                     </div>
                 </article>
                 <article className="cardArticle">
@@ -68,7 +74,7 @@ export default function Fleet() {
                     <div className="cardData">
                         <span className="cardDescription">Meet "Tesi"</span>
                         <h2 className="cardTitle">2021 Tesla Model Y</h2>
-                        <a href="/fleet" className="cardButton">Read More</a>
+                        <button className="cardButton" onClick={() => setOpenTesiModal(true)}>Read More</button>
                     </div>
                 </article>
             </div>

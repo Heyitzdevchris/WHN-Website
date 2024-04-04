@@ -9,14 +9,14 @@ export default function HeliosModal({open,onClose}) {
     <div onClick={onClose} className="overlay">
         <div onClick={(event) => {
             event.stopPropagation();
-        }}className="modalContainer">
-            <img className='modalImg' src={HeliosModalImg} alt="Red SUV Tesla" />
-            <div className="modalRight">
-                <p onClick={onClose} className="modalCloseBtn" style={{cursor: 'pointer'}}>X</p>
-                <div className="modalContent">
-                    <h1 className='modalHeading'>Meet "Helios"</h1>
-                    <h3 className='modalSubheading'>Features:</h3>
-                    <ul className='modalList'>
+        }}className="heliosModalContainer">
+            <img className='heliosModalImg' src={HeliosModalImg} alt="Red SUV Tesla" />
+            <div className="heliosModalRight">
+                <p onClick={onClose} className="heliosModalCloseBtn" style={{cursor: 'pointer'}}>X</p>
+                <div className="heliosModalContent">
+                    <h1 className='heliosModalHeading'>Meet "Helios"</h1>
+                    <h3 className='heliosModalSubheading'>Features:</h3>
+                    <ul className='heliosModalList'>
                         <li>- Automatic Transmission</li>
                         <li>- All-Wheel Drive</li>
                         <li>- Backup Camera</li>
@@ -32,16 +32,16 @@ export default function HeliosModal({open,onClose}) {
                         <li>- Autopilot</li>
                         <li>- 5-Star HGTSA Saftey Rating</li>
                     </ul>
-                    <h3 className='modalSubheading'>Description:</h3>
-                    <p className='modalText'>
+                    <h3 className='heliosModalSubheading'>Description:</h3>
+                    <p className='heliosModalText'>
                         A pinnacle of progress and luxury encapsulated in the 2023 Multi-coat Red Tesla Model Y AWD Long Range. 
                         This vehicle transcends mere transportation, embodying elegance and the forefront of technology. With "Helios," 
                         your drive is transformed into an unparalleled experience, boasting advanced Autopilot capabilities and a premium 
                         all-black leather interior. Each journey is not just a route but a showcase of innovation and comfort.
                     </p>
-                    <div className="btnContainer">
-                        <button className="reserveBtn">Reserve</button>
-                        <button onClick={onClose} className="closeBtn">Back To Selection</button>
+                    <div className="heliosBtnContainer">
+                        <button className="heliosReserveBtn">Reserve</button>
+                        <button onClick={onClose} className="heliosCloseBtn">Back To Selection</button>
                     </div>
                 </div>
             </div>

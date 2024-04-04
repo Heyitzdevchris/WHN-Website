@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.whiteNoiseModalContainer {
+.tesiModalContainer {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.whiteNoiseModalImg {
+.tesiModalImg {
     width: 525px;
     object-fit: cover;
 }
 
-.whiteNoiseModalRight {
+.tesiModalRight {
     width: 100%;
 }
 
-.whiteNoiseModalCloseBtn {
+.tesiModalCloseBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.whiteNoiseModalContent {
+.tesiModalContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,33 +48,33 @@
     padding: 1rem 2rem;
 }
 
-.whiteNoiseModalHeading {
+.tesiModalHeading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.whiteNoiseModalSubheading {
+.tesiModalSubheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.whiteNoiseModalList {
+.tesiModalList {
     font-size: 14px;
 }
 
-.whiteNoiseModalText {
+.tesiModalText {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.whiteNoiseBtnContainer {
+.tesiBtnContainer {
     display: flex;
-    padding: 5rem 1rem;
+    padding: 7.5rem 1rem;
 }
 
-.whiteNoiseBtnContainer button {
+.tesiBtnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -86,64 +86,64 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .whiteNoiseModalContainer {
+    .tesiModalContainer {
         height: 80vh;
         width: 80%;
     }
 
-    .whiteNoiseModalImg {
+    .tesiModalImg {
         width: 45%;
     }
 
-    .whiteNoiseModalContent {
+    .tesiModalContent {
         margin-top: 0;
     }
 
-    .whiteNoiseModalList {
+    .tesiModalList {
         font-size: 12px;
     }
 
-    .whiteNoiseModalText {
+    .tesiModalText {
         font-size: 12px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 3rem 1rem;
+    .tesiBtnContainer {
+        padding: 5rem 1rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .whiteNoiseModalContainer {
+    .tesiModalContainer {
         height: 85vh;
         width: 95%;
     }
 
-    .whiteNoiseModalImg {
+    .tesiModalImg {
         width: 55%;
     }
 
-    .whiteNoiseModalContent {
+    .tesiModalContent {
         margin-top: 10px;
     }
 
-    .whiteNoiseModalSubheading {
+    .tesiModalSubheading {
         font-size: 16px;
     }
 
-    .whiteNoiseModalList {
+    .tesiModalList {
         font-size: 11px;
     }
 
-    .whiteNoiseModalText {
+    .tesiModalText {
         font-size: 11px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 4rem 0;
+    .tesiBtnContainer {
+        padding: 5rem 0;
     }
 
-    .whiteNoiseBtnContainer button {
+    .tesiBtnContainer button {
         padding: 16px 8px;
     }
 
@@ -151,7 +151,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .whiteNoiseModalContainer {
+    .tesiModalContainer {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -160,23 +160,23 @@
         height: 100vh;
     }
 
-    .whiteNoiseModalHeading {
+    .tesiModalHeading {
         text-align: center;
     }
 
-    .whiteNoiseModalList {
+    .tesiModalList {
         font-size: 10px;
     }
 
-    .whiteNoiseModalText {
+    .tesiModalText {
         font-size: 10px;
     }
 
-    .whiteNoiseBtnContainer {
-        padding: 1.5rem 0;
+    .tesiBtnContainer {
+        padding: 4rem 1rem;
     }
 
-    .whiteNoiseModalImg {
+    .tesiModalImg {
         width: 100%;
         padding-top: 20px;
     }
