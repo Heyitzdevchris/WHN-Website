@@ -1,4 +1,4 @@
-.fleet-hero {
+.fleetHero {
     display: flex;
     height: 100vh;
     background-size: cover;
@@ -6,7 +6,7 @@
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,.2);
 }
 
-.fleet-ad-content {
+.fleetAdContent {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -17,74 +17,74 @@
     color: var(--textColor);
 }
 
-.fleet-ad-heading {
+.fleetAdHeading {
     font-size: 56px;
     font-weight: bolder;
 }
 
-.fleet-ad-text {
+.fleetAdText {
     font-size: 26px;
     margin: 15px 0;
 }
 
 /* Media query for Laptop */
 @media screen and (max-width: 1024px) {
-    .fleet-ad-heading {
+    .fleetAdHeading {
         font-size: 48px;
     }
 }
 
 /* Media query for Tablet*/
 @media screen and (max-width: 991px) {
-    .fleet-ad-heading {
+    .fleetAdHeading {
         font-size: 36px;
     }
 
-    .fleet-ad-text {
+    .fleetAdText {
         font-size: 24px;
     }
 }
 
 /* Media query for X-Large Phone*/
 @media screen and (max-width: 767px) {
-    .fleet-hero {
+    .fleetHero {
         height: 1100px;
     }
 
-    .fleet-ad-heading {
+    .fleetAdHeading {
         font-size: 22px;
     }
 
-    .fleet-ad-text {
+    .fleetAdText {
         font-size: 16px;
     }
 }
 
-.fleet-container {
+.fleetContainer {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
     padding-block: 1rem;
 }
 
-.card__container {
+.cardContainer {
     display: grid;
     row-gap: 2.2rem;
 }
 
-.card__article {
+.cardArticle {
     position: relative;
     overflow: hidden;
 }
 
-.card__img {
+.cardImg {
     width: 328px;
     height: 360px;
     object-fit: cover;
     border-radius: .5rem;
 }
 
-.card__data {
+.cardData {
     width: 280px;
     background-color: var(--textColor);
     padding: 1.5rem 2rem;
@@ -99,26 +99,26 @@
     transition: opacity 1s 1s;
 }
 
-.fleet-container h1 {
-    font-size: 26px;
+.fleetContainer .cardDescription {
+    font-size: 24px;
     font-weight: normal;
     margin: 20px 0;
     color: var(--mainColorLight);
 }
 
-.card__description {
+.cardDescription {
     display: block;
     font-size: 16px;
     margin-bottom: .25rem;
 }
 
-.card__title {
+.cardTitle {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: .75rem;
 }
 
-.card__button {
+.cardButton {
     font-size: .8rem;
     padding: .5rem;
     background-color: var(--mainColor);
@@ -129,11 +129,11 @@
     transition: background-color 0.3s ease;
 }
 
-.card__button:hover {
+.cardButton:hover {
     background-color: var(--mainColorLight);
 }
 
-.view-fleet-button {
+.viewFleetButton {
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
@@ -146,30 +146,30 @@
     text-decoration: none;
 }
 
-.view-fleet-button:hover {
+.viewFleetButton:hover {
     background-color: #333;
 }
 
 /* Naming animations in hover */
-.card__article:hover .card__data {
+.cardArticle:hover .cardData {
     animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s;
 }
 
-.card__article:hover {
+.cardArticle:hover {
     animation: remove-overflow 2s forwards;
 }
 
-.card__article:not(:hover) {
+.cardArticle:not(:hover) {
     animation: show-overflow 2s forwards;
 }
 
-.card__article:not(:hover) .card__data {
+.cardArticle:not(:hover) .cardData {
     animation: remove-data 1s forwards;
 }
 
-.card__img img {
+.cardImg img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -218,11 +218,11 @@
 
 /* For small mobile devices */
 @media screen and (min-width: 340px) {
-    .fleet-container {
+    .fleetContainer {
         margin-inline: 1rem;
     }
 
-    .card__data {
+    .cardData {
         width: 250px;
         padding: 1rem;
     }
@@ -230,7 +230,7 @@
 
 /* For medium devices */
 @media screen and (min-width: 768px) {
-    .card__container {
+    .cardContainer {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
     }
@@ -239,15 +239,15 @@
 /* For larger devices */
 @media screen and (min-width: 1120px) {
 
-    .card__container {
+    .cardContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .card__img {
+    .cardImg {
         width: 348px;
     }
 
-    .card__data {
+    .cardData {
         width: 316px;
         padding-inline: 2.5rem;
     }
