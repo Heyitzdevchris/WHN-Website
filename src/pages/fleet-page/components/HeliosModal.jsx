@@ -33,7 +33,7 @@ export default function HeliosModal({open,onClose}) {
                         <li>- 5-Star HGTSA Saftey Rating</li>
                     </ul>
                     <h3 className='modalSubheading'>Description:</h3>
-                    <p>
+                    <p className='modalText'>
                         A pinnacle of progress and luxury encapsulated in the 2023 Multi-coat Red Tesla Model Y AWD Long Range. 
                         This vehicle transcends mere transportation, embodying elegance and the forefront of technology. With "Helios," 
                         your drive is transformed into an unparalleled experience, boasting advanced Autopilot capabilities and a premium 
