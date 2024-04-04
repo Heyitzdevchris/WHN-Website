@@ -84,6 +84,16 @@
     border-radius: 22px;
 }
 
+.whiteNoiseReserveBtn, 
+.whiteNoiseCloseBtn {
+   cursor: pointer; 
+}
+
+.whiteNoiseReserveBtn,
+.whiteNoiseCloseBtn:hover {
+    background-color: var(--mainColorLight);
+}
+
 /* Laptop view */
 @media screen and (max-width: 1024px) {
     .whiteNoiseModalContainer {

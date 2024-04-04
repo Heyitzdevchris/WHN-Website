@@ -84,6 +84,16 @@
     border-radius: 22px;
 }
 
+.stormTrooperReserveBtn, 
+.stormTrooperCloseBtn {
+   cursor: pointer; 
+}
+
+.stormTrooperReserveBtn,
+.stormTrooperCloseBtn:hover {
+    background-color: var(--mainColorLight);
+}
+
 /* Laptop view */
 @media screen and (max-width: 1024px) {
     .stormTrooperModalContainer {

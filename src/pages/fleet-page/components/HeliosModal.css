@@ -82,6 +82,17 @@
     background-color: var(--mainColor);
     color: var(--textColor);
     border-radius: 22px;
+    transition: background-color 0.3s ease;
+}
+
+.heliosReserveBtn,
+ .heliosCloseBtn {
+    cursor: pointer;
+}
+
+.heliosReserveBtn,
+ .heliosCloseBtn:hover {
+    background-color: var(--mainColorLight);
 }
 
 /* Laptop view */

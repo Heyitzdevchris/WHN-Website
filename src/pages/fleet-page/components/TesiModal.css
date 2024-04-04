@@ -84,6 +84,16 @@
     border-radius: 22px;
 }
 
+.tesiReserveBtn, 
+.tesiCloseBtn {
+   cursor: pointer; 
+}
+
+.tesiReserveBtn,
+.tesiCloseBtn:hover {
+    background-color: var(--mainColorLight);
+}
+
 /* Laptop view */
 @media screen and (max-width: 1024px) {
     .tesiModalContainer {
