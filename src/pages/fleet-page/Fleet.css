@@ -27,6 +27,10 @@
     margin: 15px 0;
 }
 
+.fleetContainer {
+    margin-bottom: 40px;
+}
+
 /* Media query for Laptop */
 @media screen and (max-width: 1024px) {
     .fleetAdHeading {
