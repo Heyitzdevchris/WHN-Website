@@ -42,7 +42,12 @@ export default function Fleet() {
                     <div className="cardData">
                         <span className="cardDescription">Meet "Old Faithful"</span>
                         <h2 className="cardTitle">2012 Scion TC</h2>
-                        <button className="cardButton" onClick={() => setOpenScionModal(true)}>Read More</button>
+                        <button className="cardButton" onClick={() => setOpenScionModal(true)}>
+                            Read More
+                        </button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=7'}>
+                            Reserve Now
+                        </button>
                     </div>
                 </article>
                 <article className="cardArticle">
@@ -51,6 +56,7 @@ export default function Fleet() {
                         <span className="cardDescription">Meet "Helios"</span>
                         <h2 className="cardTitle">2023 Tesla Model Y</h2>
                         <button className="cardButton" onClick={() => setOpenHeliosModal(true)}>Read More</button>
+                        <button className="cardButton">Reserve Now</button>
                     </div>
                 </article>
                 <article className="cardArticle">
@@ -59,6 +65,7 @@ export default function Fleet() {
                         <span className="cardDescription">Meet "White Noise"</span>
                         <h2 className="cardTitle">2023 Tesla Model Y</h2>
                         <button className="cardButton" onClick={() => setOpenWhiteNoiseModal(true)}>Read More</button>
+                        <button className="cardButton">Reserve Now</button>
                     </div>
                 </article>
                 <article className="cardArticle">
@@ -67,6 +74,7 @@ export default function Fleet() {
                         <span className="cardDescription">Meet "Stormtrooper"</span>
                         <h2 className="cardTitle">2020 Tesla Model 3</h2>
                         <button className="cardButton" onClick={() => setOpenStormTrooperModal(true)}>Read More</button>
+                        <button className="cardButton">Reserve Now</button>
                     </div>
                 </article>
                 <article className="cardArticle">
@@ -75,6 +83,7 @@ export default function Fleet() {
                         <span className="cardDescription">Meet "Tesi"</span>
                         <h2 className="cardTitle">2021 Tesla Model Y</h2>
                         <button className="cardButton" onClick={() => setOpenTesiModal(true)}>Read More</button>
+                        <button className="cardButton">Reserve Now</button>
                     </div>
                 </article>
             </div>
