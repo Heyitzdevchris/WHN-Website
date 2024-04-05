@@ -71,7 +71,7 @@
 /* Media query for x-large mobile phone */
 @media screen and (max-width: 767px) {
     .hero {
-        height: 1400px;
+        height: 900px;
     }
 
     .advertisement-content {
@@ -89,8 +89,6 @@
     }
 
     .advertisement-content iframe {
-        width: 430px;
-        height: 1200px;
-        z-index: 100;
+        width: 425px;
     }
 }

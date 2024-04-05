@@ -6,7 +6,7 @@ import HqHomepageForm from './HqHomepageForm';
 const Advertisement = () => {
     return (
         <section className="hero" style={{backgroundImage: `url(${BackgroundImage})`}}>
-            <div className="advertisement-content" style={{paddingTop: '300px'}}>
+            <div className="advertisement-content">
                 <h1>The WHN Experience</h1>
                 <p>Excellence By Design</p>
                 <HqHomepageForm />
