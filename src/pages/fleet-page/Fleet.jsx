@@ -6,7 +6,7 @@ import StormTrooperImg from '../../images/stormtrooper.jpg';
 import WhiteNoiseImg from '../../images/whitenoise.jpg';
 import TesiImg from '../../images/tesi.jpg';
 import './Fleet.css';
-
+// Modal Images
 import ScionModal from './components/ScionModal';
 import HeliosModal from './components/HeliosModal';
 import WhiteNoiseModal from './components/WhiteNoiseModal';
