@@ -12,7 +12,7 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 8rem;
+    padding-top: 20rem;
     justify-content: center;
     align-items: center;
     color: var(--textColor);
@@ -42,9 +42,6 @@
 
 /* Media query for tablet */
 @media screen and (max-width: 991px) {
-    .advertisement-content {
-        padding-top: 0;
-    }
 
     .advertisement-content h1 {
         font-size: 40px;
@@ -75,7 +72,7 @@
     }
 
     .advertisement-content {
-        padding-top: 100px;
+        padding-top: 15rem;
     }
 
     .advertisement-content h1 {
