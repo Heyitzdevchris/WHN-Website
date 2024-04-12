@@ -38,7 +38,9 @@ export default function StormTrooperModal({open,onClose}) {
                         windows, every detail ensures your journey is not just a drive, but an experience.
                     </p>
                     <div className="stormTrooperBtnContainer">
-                        <button className="stormTrooperReserveBtn">Reserve</button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=1'}>
+                            Reserve
+                        </button>
                         <button onClick={onClose} className="stormTrooperCloseBtn">Back To Selection</button>
                     </div>
                 </div>

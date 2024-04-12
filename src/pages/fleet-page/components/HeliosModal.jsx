@@ -40,7 +40,9 @@ export default function HeliosModal({open,onClose}) {
                         all-black leather interior. Each journey is not just a route but a showcase of innovation and comfort.
                     </p>
                     <div className="heliosBtnContainer">
-                        <button className="heliosReserveBtn">Reserve</button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=6'}>
+                            Reserve
+                        </button>
                         <button onClick={onClose} className="heliosCloseBtn">Back To Selection</button>
                     </div>
                 </div>

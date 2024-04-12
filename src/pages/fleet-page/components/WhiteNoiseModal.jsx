@@ -39,7 +39,9 @@ export default function WhiteNoiseModal({open,onClose}) {
                         a drive, but an experience.
                     </p>
                     <div className="whiteNoiseBtnContainer">
-                        <button className="whiteNoiseReserveBtn">Reserve</button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=4'}>
+                            Reserve
+                        </button>
                         <button onClick={onClose} className="whiteNoiseCloseBtn">Back To Selection</button>
                     </div>
                 </div>

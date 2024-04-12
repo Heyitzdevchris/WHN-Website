@@ -33,7 +33,9 @@ export default function ScionModal({open,onClose}) {
                         At the same time, the ceramic tint on the windows ensures the cabin remains cool, shielding you from the heat outside.
                     </p>
                     <div className="scionBtnContainer">
-                        <button className="scionReserveBtn">Reserve</button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=7'}>
+                            Reserve
+                        </button>
                         <button onClick={onClose} className="scionCloseBtn">Back To Selection</button>
                     </div>
                 </div>

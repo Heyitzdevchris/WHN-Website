@@ -37,7 +37,9 @@ export default function TesiModal({open,onClose}) {
                         yourself in a driving experience that blends advanced technology with unparalleled comfort and safety.
                     </p>
                     <div className="tesiBtnContainer">
-                        <button className="tesiReserveBtn">Reserve</button>
+                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=3'}>
+                            Reserve
+                        </button>
                         <button onClick={onClose} className="tesiCloseBtn">Back To Selection</button>
                     </div>
                 </div>
