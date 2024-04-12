@@ -220,7 +220,7 @@
 
 /* ===================== BREAKPOINTS ===================== */
 
-/* For small mobile devices */
+/* For mobile devices */
 @media screen and (min-width: 340px) {
     .fleetContainer {
         margin-inline: 1rem;
@@ -232,7 +232,7 @@
     }
 }
 
-/* For medium devices */
+/* For Tablet devices */
 @media screen and (min-width: 768px) {
     .cardContainer {
         grid-template-columns: repeat(2, 1fr);
@@ -240,8 +240,8 @@
     }
 }
 
-/* For larger devices */
-@media screen and (min-width: 1120px) {
+/* For Desktop devices */
+@media screen and (min-width: 1440px) {
 
     .cardContainer {
         grid-template-columns: repeat(3, 1fr);
@@ -254,5 +254,12 @@
     .cardData {
         width: 316px;
         padding-inline: 2.5rem;
+    }
+}
+
+/* For 4k devices */
+@media screen and (min-width: 2560px) {
+    .cardContainer {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
