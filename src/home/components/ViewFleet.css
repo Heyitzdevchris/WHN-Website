@@ -1,32 +1,32 @@
-.view-fleet-container {
+.viewFleetContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 49px;
+}
+
+.viewFleetContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: top;
-    height: 700px;
-    padding-top: 75px;
+    align-items: flex-start;
 }
 
-.view-fleet-heading {
-    text-align: center;
-    margin-bottom: 20px;
+.viewFleetTitle {
+    font-size: 65px;
+    font-weight: 900;
+    margin-bottom: 33px;
 }
 
-.view-fleet-heading h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.viewFleetDescription {
+    font-size: 26px;
+    margin-bottom: 52px;
 }
 
-.view-fleet-heading p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.view-fleet-btn-section {
-    text-align: center;
-}
-
-.view-fleet-btn {
+.viewFleetBtn {
     padding: .8rem;
     font-size: 1rem;
     background-color: var(--mainColor);
@@ -35,8 +35,71 @@
     border-radius: 22px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.view-fleet-btn:hover {
-    background-color: var(--mainColorLight);
+/* For Tablet View*/
+@media screen and (max-width: 830px) {
+    .viewFleetContainer {
+        flex-direction: column-reverse;
+    }
+
+    .viewFleetContent {
+        align-items: center;
+    }
+
+    .teslaVideo {
+        margin-bottom: 25px;
+    }
 }
+
+/* For X-Large Mobile View*/
+@media screen and (max-width: 425px) {
+    .teslaVideo {
+        width: 80%;
+    }
+
+    .viewFleetTitle {
+        font-size: 35px;
+    }
+
+    .viewFleetDescription {
+        font-size: 18px;
+    }
+}
+
+/* For Laptop View */
+@media screen and (max-width: 1024px) {
+    .teslaVideo {
+        width: 50%;
+    }
+}
+
+/* For 4k View*/
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    .viewFleetContainer {
+        margin: 150px 10%;
+    }
+
+    .viewFleetTitle {
+        font-size: 85px;
+    }
+
+    .viewFleetDescription {
+        font-size: 42px;
+    }
+
+    .viewFleetBtn {
+        padding: 2rem;
+        font-size: 2rem;
+        border-radius: 50px;
+    }
+
+    .teslaVideo {
+        width: 40%;
+    }
+}
+
+
+
+  
