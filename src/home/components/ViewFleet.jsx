@@ -43,7 +43,7 @@ export default function ViewFleet() {
                 </button>
             </Link>
         </div>
-        <video ref={videoRef} className='teslaVideo' muted autoPlay loop>
+        <video ref={videoRef} className='teslaVideo' muted autoPlay loop playsInline>
             <source src={TeslaDriving} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
