@@ -1,4 +1,4 @@
-.hero {
+.advertisement__hero {
     display: flex;
     height: 100vh;
     background-size: cover;
@@ -6,7 +6,7 @@
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,.1);
 }
 
-.advertisement-content {
+.advertisement__content {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -18,12 +18,12 @@
     color: var(--textColor);
 }
 
-.advertisement-content h1 {
+.advertisement__heading {
     font-size: 56px;
     font-weight: bolder;
 }
 
-.advertisement-content p {
+.advertisement__text {
     font-size: 22px;
     margin: 15px 0;
     max-width: 550px;
@@ -31,11 +31,11 @@
 
 /* Media query for Laptop */
 @media screen and (max-width: 1024px) {
-    .advertisement-content p {
+    .advertisement__text {
         padding-bottom: 3rem;
     }
 
-    .advertisement-content iframe {
+    .advertisement__content iframe {
         width: 900px;
     }
 }
@@ -43,49 +43,49 @@
 /* Media query for tablet */
 @media screen and (max-width: 991px) {
 
-    .advertisement-content h1 {
+    .advertisement__heading {
         font-size: 40px;
     }
 
-    .advertisement-content p {
+    .advertisement__text {
         font-size: 18px;
         margin: 10px 0;
         max-width: 450px; 
     }
 
-    .advertisement-content iframe {
+    .advertisement__content iframe {
         width: 768px;
     }
 }
 
 /* Media query for landscape tablet */
 @media screen and (min-width: 1025px) and (max-width: 1366) {
-    .advertisement-content {
+    .advertisement__content {
         padding-top: 300px;
     }
 }
 
 /* Media query for x-large mobile phone */
 @media screen and (max-width: 767px) {
-    .hero {
+    .advertisement__hero {
         height: 900px;
     }
 
-    .advertisement-content {
+    .advertisement__content {
         padding-top: 15rem;
     }
 
-    .advertisement-content h1 {
+    .advertisement__heading {
         font-size: 32px;
     }
 
-    .advertisement-content p {
+    .advertisement__text {
         font-size: 16px;
         margin: 8px 0; 
         max-width: 350px; 
     }
 
-    .advertisement-content iframe {
+    .advertisement__content iframe {
         width: 420px;
     }
 }

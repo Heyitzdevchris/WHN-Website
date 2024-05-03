@@ -7,26 +7,26 @@
     color: var(--textColor);
 }
 
-.footer-left h1 {
+.footer__heading {
     font-size: 1.7rem;
 }
 
 @media screen and (max-width: 1024px) {
-    .footer-left h1 {
+    .footer__heading {
         font-size: 1.4rem;
     }
 
-    .footer p {
+    .footer__left__text {
         font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .footer-left h1 {
+    .footer__heading {
         font-size: 1.2rem;
     }
 
-    .footer p {
+    .footer__left__text {
         font-size: 0.7rem;
     }
 }
@@ -39,7 +39,7 @@
         text-align: center;
     }
 
-    .footer-left {
+    .footer__left {
         padding: 3rem 0;
     }
 }

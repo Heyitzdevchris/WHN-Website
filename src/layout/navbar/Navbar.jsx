@@ -13,44 +13,39 @@ export const Navbar = () => {
   return (
     <>
     <nav className="navbar">
-        <div className="navbar-container container">
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                <Logo className='navbar-icon'/>
+        <div className="navbar__container container">
+            <Link to='/' className='navbar__logo' onClick={closeMobileMenu}>
+                <Logo />
             </Link>
-            <div className='menu-icon' onClick={handleClick}>
+            <div className='menu__icon' onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
             </div>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
-                <li className="nav-item">
-                    <NavLink to='/' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+            <ul className={click ? "nav__menu active" : "nav__menu"}>
+                <li className="nav__item">
+                    <NavLink to='/' className={({ isActive }) => "nav__links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Home
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to='/fleet' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                <li className="nav__item">
+                    <NavLink to='/fleet' className={({ isActive }) => "nav__links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Fleet
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to='/reservation' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                <li className="nav__item">
+                    <NavLink to='/reservation' className={({ isActive }) => "nav__links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Reservation
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to='/about' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                <li className="nav__item">
+                    <NavLink to='/about' className={({ isActive }) => "nav__links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         About
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to='/contact' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
+                <li className="nav__item">
+                    <NavLink to='/contact' className={({ isActive }) => "nav__links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
                         Contact
                     </NavLink>
                 </li>
-                {/* <li className="nav-item">
-                    <NavLink to='/account' className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")} onClick={closeMobileMenu}>
-                        Account
-                    </NavLink>
-                </li> */}
             </ul>
         </div>
     </nav>

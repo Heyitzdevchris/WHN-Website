@@ -33,17 +33,17 @@ export default function ViewFleet() {
   }, []);
 
   return (
-    <div className="viewFleetContainer">
-        <div className='viewFleetContent'>
-            <h1 className='viewFleetTitle'>Explore Your Drive</h1>
-            <p className='viewFleetDescription'>Car rentals from WHN Enterprise</p>
+    <div className="view__fleet__container">
+        <div className='view__fleet__content'>
+            <h1 className='view__fleet__title'>Explore Your Drive</h1>
+            <p className='view__fleet__description'>Car rentals from WHN Enterprise</p>
             <Link to='/fleet'>
-                <button className="viewFleetBtn">
+                <button className="view__fleet__btn">
                     Browse Fleet
                 </button>
             </Link>
         </div>
-        <video ref={videoRef} className='teslaVideo' muted autoPlay loop playsInline>
+        <video ref={videoRef} className='tesla__video' muted autoPlay loop playsInline>
             <source src={TeslaDriving} type="video/mp4" />
             Your browser does not support the video tag.
         </video>

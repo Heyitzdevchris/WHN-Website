@@ -1,10 +1,10 @@
-.abt-wrap {
+.abt__wrap {
     display: flex;
     flex-direction: row;
     height: 39rem;
   }
 
-.abt-content {
+.abt__content {
     background-color: var(--mainColorLight);
     color: var(--textColor);
     width: 40%;
@@ -16,19 +16,19 @@
     overflow: auto;
   }
 
-.abt-photo {
+.abt__photo {
     width: 60%;
     justify-content: center;
     padding: 0;
 }
 
-.abt-text {
+.abt__text {
     max-width: 600px;
     line-height: 1.5rem;
     text-align: center;
 }
 
-.abt-btn {
+.abt__btn {
     padding: 0.8rem;
     margin: 20px auto;
     padding: 10px 20px;
@@ -43,12 +43,12 @@
     }
 }
 
-.abt-text p {
+.abt__text p {
     margin: 1rem;
     text-align: right;
 }
 
-.abt-content h1 {
+.abt__content h1 {
     font-size: 2.5rem;
 }
 
@@ -56,11 +56,11 @@
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .abt-wrap {
+    .abt__wrap {
         height: 42rem;
     }
 
-    .abt-text {
+    .abt__text {
         max-width: 400px;
         text-align: center;
     }
@@ -68,48 +68,48 @@
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .abt-wrap {
+    .abt__wrap {
         height: 30rem;
     }
 
-    .abt-text {
+    .abt__text {
         max-width: 320px;
         line-height: 1.2rem;
         text-align: center;
     }
 
-    .abt-content h1{
+    .abt__content h1{
         font-size: 1.7rem;
     }
 
-    .abt-text p {
+    .abt__text p {
         font-size: 12px;
     }
 }
 
 /* Large phone view */
 @media screen and (max-width: 430px) {
-    .abt-wrap {
+    .abt__wrap {
       flex-direction: column;
       align-items: center;
       width: 100%;
       height: fit-content;
     }
   
-    .abt-content {
+    .abt__content {
       width: 100%;
       padding: 1rem 0;
     }
   
-    .abt-wrap img {
+    .abt__wrap img {
       width: 100%;
     }
 
-    .abt-heading {
+    .abt__heading {
         padding-top: 20px;
     }
 
-    .abt-text p {
+    .abt__text p {
         padding: 30px 0;
         text-align: center;
         max-width: 500px;
