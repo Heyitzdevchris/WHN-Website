@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.stormTrooperModalContainer {
+.stormTrooper__modal__container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.stormTrooperModalImg {
+.stormTrooper__modal__img {
     width: 525px;
     object-fit: cover;
 }
 
-.stormTrooperModalRight {
+.stormTrooper__modal__right {
     width: 100%;
 }
 
-.stormTrooperModalCloseBtn {
+.stormTrooper__modal__closeBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.stormTrooperModalContent {
+.stormTrooper__modal__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,33 +48,33 @@
     padding: 1rem 2rem;
 }
 
-.stormTrooperModalHeading {
+.stormTrooper__modal__heading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.stormTrooperModalSubheading {
+.stormTrooper__modal__subheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.stormTrooperModalList {
+.stormTrooper__modal__list {
     font-size: 14px;
 }
 
-.stormTrooperModalText {
+.stormTrooper__modal__text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.stormTrooperBtnContainer {
+.stormTrooper__btnContainer {
     display: flex;
     padding: 6rem 1rem;
 }
 
-.stormTrooperBtnContainer button {
+.stormTrooper__btnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -84,76 +84,76 @@
     border-radius: 22px;
 }
 
-.stormTrooperReserveBtn, 
-.stormTrooperCloseBtn {
+.reserve__btn, 
+.stormTrooper__closeBtn {
    cursor: pointer; 
 }
 
-.stormTrooperReserveBtn,
-.stormTrooperCloseBtn:hover {
+.reserve__btn,
+.stormTrooper__closeBtn:hover {
     background-color: var(--mainColorLight);
 }
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .stormTrooperModalContainer {
+    .stormTrooper__modal__container {
         height: 80vh;
         width: 80%;
     }
 
-    .stormTrooperModalImg {
+    .stormTrooper__modal__img {
         width: 45%;
     }
 
-    .stormTrooperModalContent {
+    .stormTrooper__modal__content {
         margin-top: 0;
     }
 
-    .stormTrooperModalList {
+    .stormTrooper__modal__list {
         font-size: 12px;
     }
 
-    .stormTrooperModalText {
+    .stormTrooper__modal__text {
         font-size: 12px;
     }
 
-    .stormTrooperBtnContainer {
+    .stormTrooper__btnContainer {
         padding: 4rem 1rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .stormTrooperModalContainer {
+    .stormTrooper__modal__container {
         height: 85vh;
         width: 95%;
     }
 
-    .stormTrooperModalImg {
+    .stormTrooper__modal__img {
         width: 55%;
     }
 
-    .stormTrooperModalContent {
+    .stormTrooper__modal__content {
         margin-top: 10px;
     }
 
-    .stormTrooperModalSubheading {
+    .stormTrooper__modal__subheading {
         font-size: 16px;
     }
 
-    .stormTrooperModalList {
+    .stormTrooper__modal__list {
         font-size: 11px;
     }
 
-    .stormTrooperModalText {
+    .stormTrooper__modal__text {
         font-size: 11px;
     }
 
-    .stormTrooperBtnContainer {
+    .stormTrooper__btnContainer {
         padding: 3rem 0;
     }
 
-    .stormTrooperBtnContainer button {
+    .stormTrooper__btnContainer button {
         padding: 16px 8px;
     }
 
@@ -161,7 +161,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .stormTrooperModalContainer {
+    .stormTrooper__modal__container {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -170,24 +170,24 @@
         height: 100vh;
     }
 
-    .stormTrooperModalHeading {
+    .stormTrooper__modal__img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .stormTrooper__modal__heading {
         text-align: center;
     }
 
-    .stormTrooperModalList {
+    .stormTrooper__modal__list {
         font-size: 10px;
     }
 
-    .stormTrooperModalText {
+    .stormTrooper__modal__text {
         font-size: 10px;
     }
 
-    .stormTrooperBtnContainer {
+    .stormTrooper__btnContainer {
         padding: 4rem 0;
-    }
-
-    .stormTrooperModalImg {
-        width: 100%;
-        padding-top: 20px;
     }
 }

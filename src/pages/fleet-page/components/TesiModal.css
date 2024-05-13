@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.tesiModalContainer {
+.tesi__modal__container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.tesiModalImg {
+.tesi__modal__img {
     width: 525px;
     object-fit: cover;
 }
 
-.tesiModalRight {
+.tesi__modal__right {
     width: 100%;
 }
 
-.tesiModalCloseBtn {
+.tesi__modal__closeBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.tesiModalContent {
+.tesi__modal__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,33 +48,33 @@
     padding: 1rem 2rem;
 }
 
-.tesiModalHeading {
+.tesi__modal__heading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.tesiModalSubheading {
+.tesi__modal__subheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.tesiModalList {
+.tesi__modal__list {
     font-size: 14px;
 }
 
-.tesiModalText {
+.tesi__modal__text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.tesiBtnContainer {
+.tesi__btnContainer {
     display: flex;
     padding: 7.5rem 1rem;
 }
 
-.tesiBtnContainer button {
+.tesi__btnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -84,76 +84,76 @@
     border-radius: 22px;
 }
 
-.tesiReserveBtn, 
-.tesiCloseBtn {
+.reserveBtn, 
+.tesi__closeBtn {
    cursor: pointer; 
 }
 
-.tesiReserveBtn,
-.tesiCloseBtn:hover {
+.reserveBtn,
+.tesi__closeBtn:hover {
     background-color: var(--mainColorLight);
 }
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .tesiModalContainer {
+    .tesi__modal__container {
         height: 80vh;
         width: 80%;
     }
 
-    .tesiModalImg {
+    .tesi__modal__img {
         width: 45%;
     }
 
-    .tesiModalContent {
+    .tesi__modal__content {
         margin-top: 0;
     }
 
-    .tesiModalList {
+    .tesi__modal__list {
         font-size: 12px;
     }
 
-    .tesiModalText {
+    .tesi__modal__text {
         font-size: 12px;
     }
 
-    .tesiBtnContainer {
+    .tesi__btnContainer {
         padding: 5rem 1rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .tesiModalContainer {
+    .tesi__modal__container {
         height: 85vh;
         width: 95%;
     }
 
-    .tesiModalImg {
+    .tesi__modal__img {
         width: 55%;
     }
 
-    .tesiModalContent {
+    .tesi__modal__content {
         margin-top: 10px;
     }
 
-    .tesiModalSubheading {
+    .tesi__modal__subheading {
         font-size: 16px;
     }
 
-    .tesiModalList {
+    .tesi__modal__list {
         font-size: 11px;
     }
 
-    .tesiModalText {
+    .tesi__modal__text {
         font-size: 11px;
     }
 
-    .tesiBtnContainer {
+    .tesi__btnContainer {
         padding: 5rem 0;
     }
 
-    .tesiBtnContainer button {
+    .tesi__btnContainer button {
         padding: 16px 8px;
     }
 
@@ -161,7 +161,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .tesiModalContainer {
+    .tesi__modal__container {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -170,24 +170,24 @@
         height: 100vh;
     }
 
-    .tesiModalHeading {
+    .tesi__modal__img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .tesi__modal__heading {
         text-align: center;
     }
 
-    .tesiModalList {
+    .tesi__modal__list {
         font-size: 10px;
     }
 
-    .tesiModalText {
+    .tesi__modal__text {
         font-size: 10px;
     }
 
-    .tesiBtnContainer {
+    .tesi__btnContainer {
         padding: 4rem 1rem;
-    }
-
-    .tesiModalImg {
-        width: 100%;
-        padding-top: 20px;
     }
 }

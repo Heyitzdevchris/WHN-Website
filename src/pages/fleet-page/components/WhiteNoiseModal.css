@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.whiteNoiseModalContainer {
+.whiteNoise__modal__container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.whiteNoiseModalImg {
+.whiteNoise__modal__img {
     width: 525px;
     object-fit: cover;
 }
 
-.whiteNoiseModalRight {
+.whiteNoise__modal__right {
     width: 100%;
 }
 
-.whiteNoiseModalCloseBtn {
+.whiteNoise__modal__closeBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.whiteNoiseModalContent {
+.whiteNoise__modal__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,33 +48,33 @@
     padding: 1rem 2rem;
 }
 
-.whiteNoiseModalHeading {
+.whiteNoise__modal__heading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.whiteNoiseModalSubheading {
+.whiteNoise__modal__subheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.whiteNoiseModalList {
+.whiteNoise__modal__list {
     font-size: 14px;
 }
 
-.whiteNoiseModalText {
+.whiteNoise__modal__text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.whiteNoiseBtnContainer {
+.whiteNoise__btnContainer {
     display: flex;
     padding: 5rem 1rem;
 }
 
-.whiteNoiseBtnContainer button {
+.whiteNoise__btnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -84,76 +84,76 @@
     border-radius: 22px;
 }
 
-.whiteNoiseReserveBtn, 
-.whiteNoiseCloseBtn {
+.reserve__btn, 
+.whiteNoise__closeBtn {
    cursor: pointer; 
 }
 
-.whiteNoiseReserveBtn,
-.whiteNoiseCloseBtn:hover {
+.reserve__btn,
+.whiteNoise__closeBtn:hover {
     background-color: var(--mainColorLight);
 }
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .whiteNoiseModalContainer {
+    .whiteNoise__modal__container {
         height: 80vh;
         width: 80%;
     }
 
-    .whiteNoiseModalImg {
+    .whiteNoise__modal__img {
         width: 45%;
     }
 
-    .whiteNoiseModalContent {
+    .whiteNoise__modal__content {
         margin-top: 0;
     }
 
-    .whiteNoiseModalList {
+    .whiteNoise__modal__list {
         font-size: 12px;
     }
 
-    .whiteNoiseModalText {
+    .whiteNoise__modal__text {
         font-size: 12px;
     }
 
-    .whiteNoiseBtnContainer {
+    .whiteNoise__btnContainer {
         padding: 3rem 1rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .whiteNoiseModalContainer {
+    .whiteNoise__modal__container {
         height: 85vh;
         width: 95%;
     }
 
-    .whiteNoiseModalImg {
+    .whiteNoise__modal__img {
         width: 55%;
     }
 
-    .whiteNoiseModalContent {
+    .whiteNoise__modal__content {
         margin-top: 10px;
     }
 
-    .whiteNoiseModalSubheading {
+    .whiteNoise__modal__subheading {
         font-size: 16px;
     }
 
-    .whiteNoiseModalList {
+    .whiteNoise__modal__list {
         font-size: 11px;
     }
 
-    .whiteNoiseModalText {
+    .whiteNoise__modal__text {
         font-size: 11px;
     }
 
-    .whiteNoiseBtnContainer {
+    .whiteNoise__btnContainer {
         padding: 4rem 0;
     }
 
-    .whiteNoiseBtnContainer button {
+    .whiteNoise__btnContainer button {
         padding: 16px 8px;
     }
 
@@ -161,7 +161,7 @@
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .whiteNoiseModalContainer {
+    .whiteNoise__modal__container {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -170,24 +170,24 @@
         height: 100vh;
     }
 
-    .whiteNoiseModalHeading {
+    .whiteNoise__modal__img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .whiteNoise__modal__heading {
         text-align: center;
     }
 
-    .whiteNoiseModalList {
+    .whiteNoise__modal__list {
         font-size: 10px;
     }
 
-    .whiteNoiseModalText {
+    .whiteNoise__modal__text {
         font-size: 10px;
     }
 
-    .whiteNoiseBtnContainer {
+    .whiteNoise__btnContainer {
         padding: 1.5rem 0;
-    }
-
-    .whiteNoiseModalImg {
-        width: 100%;
-        padding-top: 20px;
     }
 }

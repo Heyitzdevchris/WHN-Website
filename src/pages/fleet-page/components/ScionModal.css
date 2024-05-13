@@ -9,7 +9,7 @@
     z-index: 999;
 }
 
-.scionModalContainer {
+.scion__modal__container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,23 +24,23 @@
     z-index: 1000;
 }
 
-.scionModalImg {
+.scion__modal__img {
     width: 525px;
     object-fit: cover;
 }
 
-.scionModalRight {
+.scion__modal__right {
     width: 100%;
 }
 
-.scionModalCloseBtn {
+.scion__modal__closeBtn {
     position: fixed;
     top: 8px;
     right: 8px;
     color: var(--mainColor);
 }
 
-.scionModalContent {
+.scion__modal__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,33 +49,33 @@
     padding: 1rem 2rem;
 }
 
-.scionModalHeading {
+.scion__modal__heading {
     color: var(--secondaryColor);
     padding-bottom: 24px;
     text-align: center;
 }
 
-.scionModalSubheading {
+.scion__modal__subheading {
     padding: 10px 0;
     color: var(--mainColor);
     font-size: 22px;
 }
 
-.scionModalList {
+.scion__modal__list {
     font-size: 14px;
 }
 
-.scionModalText {
+.scion__modal__text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-.scionBtnContainer {
+.scion__btnContainer {
     display: flex;
     padding: 8rem 1rem;
 }
 
-.scionBtnContainer button {
+.scion__btnContainer button {
     width: 100%;
     margin: .5rem;
     padding: 16px 0;
@@ -86,86 +86,83 @@
     transition: background-color 0.3s ease;
 }
 
-.scionReserveBtn, 
-.scionCloseBtn {
+.reserve__btn, 
+.scion__closeBtn {
    cursor: pointer; 
 }
 
-.scionReserveBtn,
-.scionCloseBtn:hover {
+.reserve__btn,
+.scion__closeBtn:hover {
     background-color: var(--mainColorLight);
 }
 
 /* Laptop view */
 @media screen and (max-width: 1024px) {
-    .scionModalContainer {
+    .scion__modal__container {
         height: 80vh;
         width: 80%;
     }
 
-    .scionModalImg {
+    .scion__modal__img {
         width: 45%;
     }
 
-    .scionModalContent {
+    .scion__modal__content {
         margin-top: 0;
     }
 
-    .scionModalList {
+    .scion__modal__list {
         font-size: 12px;
     }
 
-    .scionModalText {
+    .scion__modal__text {
         font-size: 12px;
     }
 
-    .scionBtnContainer {
+    .scion__btnContainer {
         padding-top: 7rem;
     }
 }
 
 /* Tablet view */
 @media screen and (max-width: 768px) {
-    .scionModalContainer {
+    .scion__modal__container {
         height: 85vh;
         width: 95%;
     }
 
-    .scionModalImg {
+    .scion__modal__img {
         width: 55%;
     }
 
-    .scionModalContent {
+    .scion__modal__content {
         margin-top: 10px;
     }
 
-    .scionModalContentSubheading {
-        font-size: 16px;
-    }
-
-    .scionBtnContainer {
+    /* Need to combine these two css classes */
+    .scion__btnContainer {
         padding: 1rem 0;
     }
 
-    .scionBtnContainer {
+    .scion__btnContainer {
         padding-top: 5rem;
     }
 
-    .scionBtnContainer button {
+    .scion__btnContainer button {
         padding: 16px 8px;
     }
 
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1366) {
-    .scionModalContainer {
+    .scion__modal__container {
         height: 80vh;
     }
 }
 
 /* Mobile view */
 @media screen and (max-width: 500px) {
-    .scionModalContainer {
+    .scion__modal__container {
         flex-direction: column;
         top: 0;
         left: 0;
@@ -174,24 +171,24 @@
         height: 100vh;
     }
 
-    .scionModalHeading {
+    .scion__modal__img {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .scion__modal__heading {
         text-align: center;
     }
 
-    .scionModalList {
+    .scion__modal__list {
         font-size: 10px;
     }
 
-    .scionModalText {
+    .scion__modal__text {
         font-size: 10px;
     }
 
-    .scionBtnContainer {
+    .scion__btnContainer {
         padding: 1rem 1rem;
-    }
-
-    .scionModalImg {
-        width: 100%;
-        padding-top: 20px;
     }
 }
