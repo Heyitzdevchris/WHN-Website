@@ -24,80 +24,80 @@ export default function Fleet() {
 
   return (
     <section>
-        <div className='fleetHero' style={{backgroundImage: `url(${FleetPageAdImg})`}}>
-            <div className="fleetAdContent">
-                <h1 className="fleetAdHeading">Experience WHN's Fleet Selection</h1>
-                <p className="fleetAdText">Find Your Perfect Drive</p>
+        <div className='fleet__hero' style={{backgroundImage: `url(${FleetPageAdImg})`}}>
+            <div className="fleet__ad__content">
+                <h1 className="fleet__ad__heading">Experience WHN's Fleet Selection</h1>
+                <p className="fleet__ad__text">Find Your Perfect Drive</p>
             </div>
         </div>
-        <div className="fleetContainer">
+        <div className="fleet__container">
             <ScionModal open={openScion} onClose={() => setOpenScionModal(false)} />
             <HeliosModal open={openHelios} onClose={() => setOpenHeliosModal(false)} />
             <WhiteNoiseModal open={openWhiteNoise} onClose={() => setOpenWhiteNoiseModal(false)} />
             <StormTrooperModal open={openStormTrooper} onClose={() => setOpenStormTrooperModal(false)} />
             <TesiModal open={openTesi} onClose={() => setOpenTesiModal(false)} />
-            <div className="cardContainer">
-                <article className="cardArticle">
-                    <img src={ScionImg} alt="White Scion TC" className="cardImg" />
-                    <div className="cardData">
-                        <span className="cardDescription">Meet "Old Faithful"</span>
-                        <h2 className="cardTitle">2012 Scion TC</h2>
-                        <button className="cardButton" onClick={() => setOpenScionModal(true)}>
+            <div className="card__container">
+                <article className="card__article">
+                    <img src={ScionImg} alt="White Scion TC" className="card__img" />
+                    <div className="card__data">
+                        <span className="card__description">Meet "Old Faithful"</span>
+                        <h2 className="card__title">2012 Scion TC</h2>
+                        <button className="card__btn" onClick={() => setOpenScionModal(true)}>
                             Read More
                         </button>
-                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=7'}>
+                        <button className="card__btn" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=7'}>
                             Reserve Now
                         </button>
                     </div>
                 </article>
-                <article className="cardArticle">
-                    <img src={HeliosImg} alt="Red Tesla Sedan" className="cardImg" />
-                    <div className="cardData">
-                        <span className="cardDescription">Meet "Helios"</span>
-                        <h2 className="cardTitle">2023 Tesla Model Y</h2>
-                        <button className="cardButton" onClick={() => setOpenHeliosModal(true)}>
+                <article className="card__article">
+                    <img src={HeliosImg} alt="Red Tesla Sedan" className="card__img" />
+                    <div className="card__data">
+                        <span className="card__description">Meet "Helios"</span>
+                        <h2 className="card__title">2023 Tesla Model Y</h2>
+                        <button className="card__btn" onClick={() => setOpenHeliosModal(true)}>
                             Read More
                         </button>
-                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=6'}>
+                        <button className="card__btn" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=6'}>
                             Reserve Now
                         </button>
                     </div>
                 </article>
-                <article className="cardArticle">
-                    <img src={WhiteNoiseImg} alt="White Telsa SUV" className="cardImg" />
-                    <div className="cardData">
-                        <span className="cardDescription">Meet "White Noise"</span>
-                        <h2 className="cardTitle">2023 Tesla Model Y</h2>
-                        <button className="cardButton" onClick={() => setOpenWhiteNoiseModal(true)}>
+                <article className="card__article">
+                    <img src={WhiteNoiseImg} alt="White Telsa SUV" className="card__img" />
+                    <div className="card__data">
+                        <span className="card__description">Meet "White Noise"</span>
+                        <h2 className="card__title">2023 Tesla Model Y</h2>
+                        <button className="card__btn" onClick={() => setOpenWhiteNoiseModal(true)}>
                             Read More
                         </button>
-                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=4'}>
+                        <button className="card__btn" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=4'}>
                             Reserve Now
                         </button>
                     </div>
                 </article>
-                <article className="cardArticle">
-                    <img src={StormTrooperImg} alt="White Tesla Sedan" className="cardImg" />
-                    <div className="cardData">
-                        <span className="cardDescription">Meet "Stormtrooper"</span>
-                        <h2 className="cardTitle">2020 Tesla Model 3</h2>
-                        <button className="cardButton" onClick={() => setOpenStormTrooperModal(true)}>
+                <article className="card__article">
+                    <img src={StormTrooperImg} alt="White Tesla Sedan" className="card__img" />
+                    <div className="card__data">
+                        <span className="card__description">Meet "Stormtrooper"</span>
+                        <h2 className="card__title">2020 Tesla Model 3</h2>
+                        <button className="card__btn" onClick={() => setOpenStormTrooperModal(true)}>
                             Read More
                         </button>
-                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=1'}>
+                        <button className="card__btn" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=1'}>
                             Reserve Now
                         </button>
                     </div>
                 </article>
-                <article className="cardArticle">
-                    <img src={TesiImg} alt="White Tesla White Rimmed SUV" className="cardImg" />
-                    <div className="cardData">
-                        <span className="cardDescription">Meet "Tesi"</span>
-                        <h2 className="cardTitle">2021 Tesla Model Y</h2>
-                        <button className="cardButton" onClick={() => setOpenTesiModal(true)}>
+                <article className="card__article">
+                    <img src={TesiImg} alt="White Tesla White Rimmed SUV" className="card__img" />
+                    <div className="card__data">
+                        <span className="card__description">Meet "Tesi"</span>
+                        <h2 className="card__title">2021 Tesla Model Y</h2>
+                        <button className="card__btn" onClick={() => setOpenTesiModal(true)}>
                             Read More
                         </button>
-                        <button className="cardButton" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=3'}>
+                        <button className="card__btn" onClick={() => window.location.href = 'https://whnrentals.com/reservation?target_step=1&vehicle_class_id=3'}>
                             Reserve Now
                         </button>
                     </div>
